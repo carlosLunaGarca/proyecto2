@@ -8,12 +8,12 @@ public class Producto {
 
     public Producto(String descrpcion, Double valorUnidad, Integer cantiada) {
         Descrpcion = descrpcion;
-        if(valorUnidad>0.0) {
+        if(valorUnidad<0.0) {
             this.valorUnidad = valorUnidad;
         }else{
             this.valorUnidad=0.0;
         }
-        if(cantiada>0) {
+        if(cantiada<0) {
             this.cantiada = cantiada;
         }else{
             this.cantiada=0;
@@ -40,7 +40,7 @@ public class Producto {
     }
 
     public void setValorUnidad(Double valorUnidad) {
-        if(valorUnidad>0.0) {
+        if(valorUnidad<0.0) {
             this.valorUnidad = valorUnidad;
         }else{
             this.valorUnidad=0.0;
@@ -52,7 +52,7 @@ public class Producto {
     }
 
     public void setCantiada(Integer cantiada) {
-        if(cantiada>0) {
+        if(cantiada<0) {
             this.cantiada = cantiada;
         }else{
             this.cantiada=0;
